@@ -14,6 +14,23 @@
 
 <body>
     <div class="container">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navin-toggle">
+            <label for="navin-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">о нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">скидки</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">лучшие туры</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">калькулятор цены</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">связаться с нами</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <img class="header__logo" src="icons/Icon-logo.svg" alt="Baloon logo">
             <div class="header__box">
@@ -278,18 +295,48 @@
                                     <input type="email" class="form__input" placeholder="Ваш email" id="email" required>
                                     <label for="email" class="form__label">Ваш email</label>
                                 </div>
+
+                                <div class="form__group">
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-1" name="checked">
+                                        <label for="tour-1" class="form__label-radio">
+                                            <span class="form__button-radio"></span>
+                                            Групповой тур</label>
+                                    </div>
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-2" name="checked">
+                                        <label for="tour-2" class="form__label-radio">
+                                            <span class="form__button-radio"></span>
+                                            Индивидуальный тур</label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="btn btn_animated btn-brown">Забронировать</и>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="row text-align-center">
+                <a href="#">
+                    <img src="icons/Icon-logo.svg" alt="logo" class="footer__logo">
+                </a>
+            </div>
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Скидки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Лучшие туры</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Калькулятор цены</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Связаться с нами</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-
-
-
-
-
 
 
     <!-- <section class="grid-test">

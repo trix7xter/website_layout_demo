@@ -1,6 +1,6 @@
 // button component
 .btn
-    &:link, &:visited
+    &, &:link, &:visited
         @include style-link($color-gray)
         padding: 1.5rem 4rem
         background: $color-white
@@ -8,6 +8,7 @@
         transition: all .3s
         position: relative
         font-size: 2rem
+        border: none
     &:hover
         transform: translateY(-3px)
         box-shadow: $box-shadow
@@ -33,3 +34,11 @@
     &_animated
         animation: BtnToUp .7s ease-out .7
         animation-fill-mode: backwards
+
+.btn-brown
+    &, &:link, &:visited
+        background: $color-brown-dark
+        color: $color-white
+    &:hover
+    &::after
+        background: $color-brown-dark
